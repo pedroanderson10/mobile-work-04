@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Trabalho_04</string>
+    <string name="Contatos">Contatos</string>
+    <string name="Sair">Sair</string>
 </resources>

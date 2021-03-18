@@ -3,6 +3,7 @@ package com.example.trabalho_04;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -83,6 +84,11 @@ public class CadastroActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Log.i("testeCadastro", documentReference.getId());
+
+                        Intent intent = new Intent(CadastroActivity.this, MensagensActivity.class);
+                        //Fazer que activity seja a principal
+                        intent.setFlags(intent.FLAG_ACTIVITY_CLEAR_TASK | intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
