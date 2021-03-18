@@ -56,6 +56,11 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.i("testeAutenticação", task.getResult().getUser().getUid());
+
+                        Intent intent = new Intent(MainActivity.this, MensagensActivity.class);
+                        //Fazer que activity seja a principal
+                        intent.setFlags(intent.FLAG_ACTIVITY_CLEAR_TASK | intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
