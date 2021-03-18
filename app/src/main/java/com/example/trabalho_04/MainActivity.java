@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                         //Fazer que activity seja a principal
                         intent.setFlags(intent.FLAG_ACTIVITY_CLEAR_TASK | intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
+
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

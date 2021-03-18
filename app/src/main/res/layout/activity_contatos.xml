@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CED6E0"
-    tools:context=".MensagensActivity">
+    tools:context=".ContatosActivity">
 
     <TextView
         android:id="@+id/textViewTituloPrimeiroPainel"
         android:layout_width="wrap_content"
         android:layout_height="27dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="11dp"
-        android:text="Lista de conversas recentes"
+        android:text="Lista de contatos"
         android:textColor="#2F3542"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +25,7 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewChat"
+        android:id="@+id/recyclerViewContatos"
         android:layout_width="410dp"
         android:layout_height="0dp"
         android:layout_marginTop="60dp"
@@ -37,6 +37,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

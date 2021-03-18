@@ -9,18 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trabalho_04">
-        <activity android:name=".MensagensActivity">
 
+        <activity android:name=".ContatosActivity" android:label="@string/Contatos">
+
+            <!-- Definir qual a activity pai da activity Contatos -->
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MensagensActivity"/>
+
+        </activity>
+
+
+        <activity android:name=".MensagensActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
 
-        </activity>
         <activity android:name=".CadastroActivity" />
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"></activity>
+
     </application>
 
 </manifest>

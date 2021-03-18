@@ -40,6 +40,8 @@ public class MensagensActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.contatos:
+                Intent intent = new Intent(MensagensActivity.this, ContatosActivity.class);
+                startActivity(intent);
                 break;
             case R.id.logout:
                 FirebaseAuth.getInstance().signOut();

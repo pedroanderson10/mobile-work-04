@@ -10,6 +10,10 @@ public class User {
         this.nome = nome;
     }
 
+    public User(){
+
+    }
+
 
     public String getId() {
         return id;
