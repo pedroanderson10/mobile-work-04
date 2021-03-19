@@ -10,14 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trabalho_04">
 
-        <activity android:name=".ContatosActivity" android:label="@string/Contatos">
+        <activity android:name=".ChatActivity"
+            android:label="Chat">
 
             <!-- Definir qual a activity pai da activity Contatos -->
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MensagensActivity"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MensagensActivity" />
 
         </activity>
 
+        <activity
+            android:name=".ContatosActivity"
+            android:label="@string/Contatos">
+
+            <!-- Definir qual a activity pai da activity Contatos -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MensagensActivity" />
+        </activity>
 
         <activity android:name=".MensagensActivity">
             <intent-filter>
@@ -28,7 +39,7 @@
         </activity>
 
         <activity android:name=".CadastroActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
 
     </application>
 
