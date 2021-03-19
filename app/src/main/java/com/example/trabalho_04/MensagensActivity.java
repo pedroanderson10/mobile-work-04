@@ -43,6 +43,10 @@ public class MensagensActivity extends AppCompatActivity {
                 Intent intent = new Intent(MensagensActivity.this, ContatosActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.chatGrupo:
+                Intent intent2 = new Intent(MensagensActivity.this, ChatGrupoActivity.class);
+                startActivity(intent2);
+                break;
             case R.id.logout:
                 FirebaseAuth.getInstance().signOut();
                 verificarAutenticacao();

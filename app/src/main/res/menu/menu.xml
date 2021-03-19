@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/contatos"
-        android:title="@string/Contatos"
-        app:showAsAction="always"/>
+        android:title="@string/Contatos"/>
+
+    <item android:id="@+id/chatGrupo"
+        android:title="@string/chatGrupo"/>
 
     <item android:id="@+id/logout"
-        android:title="@string/Sair"
-        app:showAsAction="always"/>
+        android:title="@string/Sair" />
 
 </menu>

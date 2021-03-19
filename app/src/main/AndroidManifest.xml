@@ -9,17 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trabalho_04">
+        <activity android:name=".ChatGrupoActivity"
+            android:label="@string/chatGrupo">
 
-        <activity android:name=".ChatActivity"
-            android:label="Chat">
-
-            <!-- Definir qual a activity pai da activity Contatos -->
+            <!-- Definir qual a activity pai da activity Chat em grupo -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MensagensActivity" />
-
         </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:label="Chat">
 
+            <!-- Definir qual a activity pai da activity Chat -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MensagensActivity" />
+        </activity>
         <activity
             android:name=".ContatosActivity"
             android:label="@string/Contatos">
@@ -29,27 +35,25 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MensagensActivity" />
         </activity>
-
-        <activity android:name=".MensagensActivity" android:label="Lista de conversas">
+        <activity
+            android:name=".MensagensActivity"
+            android:label="Lista de conversas">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".CadastroActivity"
+        <activity
+            android:name=".CadastroActivity"
             android:label="Cadastro">
 
             <!-- Definir qual a activity pai da activity Contatos -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
-
         </activity>
-
         <activity android:name=".MainActivity" />
-
     </application>
 
 </manifest>

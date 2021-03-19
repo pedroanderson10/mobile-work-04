@@ -67,7 +67,7 @@ public class ContatosActivity extends AppCompatActivity {
                             return;
                         }
 
-                        //Elementos da lista
+                        //Elementos da lista de usuários
                         List<DocumentSnapshot> docs =  value.getDocuments();
                         for (DocumentSnapshot doc : docs){
                             User user = doc.toObject(User.class);
