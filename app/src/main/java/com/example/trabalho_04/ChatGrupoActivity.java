@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.trabalho_04.entidade.Mensagem;
 import com.example.trabalho_04.entidade.User;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -44,7 +45,7 @@ public class ChatGrupoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_grupo);
 
-        editChatGrupo = findViewById(R.id.editChatGrupo);
+        /*editChatGrupo = findViewById(R.id.editChatGrupo);
 
         // Receber usuários para receber mensagem no grupo
         buscarUsuarios();
@@ -64,7 +65,7 @@ public class ChatGrupoActivity extends AppCompatActivity {
                         userLogado = documentSnapshot.toObject(User.class);
                         buscarMensagens();
                     }
-                });
+                });*/
 
 
     }

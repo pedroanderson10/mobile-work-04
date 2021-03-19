@@ -1,4 +1,4 @@
-package com.example.trabalho_04;
+package com.example.trabalho_04.entidade;
 
 public class Mensagem {
 
