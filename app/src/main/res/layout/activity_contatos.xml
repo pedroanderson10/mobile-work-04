@@ -7,28 +7,11 @@
     android:background="#CED6E0"
     tools:context=".ContatosActivity">
 
-    <TextView
-        android:id="@+id/textViewTituloPrimeiroPainel"
-        android:layout_width="wrap_content"
-        android:layout_height="27dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="11dp"
-        android:text="Lista de contatos"
-        android:textColor="#2F3542"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.00999999" />
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewContatos"
         android:layout_width="410dp"
         android:layout_height="0dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:background="#CED6E0"
         android:scrollbars="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
