@@ -79,11 +79,12 @@ public class CadastroActivity extends AppCompatActivity {
         User user = new User(id, nomeUsuario);
 
         FirebaseFirestore.getInstance().collection("users")
-                .add(user)
-                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                .document(id)
+                .set(user)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
-                    public void onSuccess(DocumentReference documentReference) {
-                        Log.i("testeCadastro", documentReference.getId());
+                    public void onSuccess(Void aVoid) {
+                        //Log.i("testeCadastro", documentReference.getId());
 
                         Intent intent = new Intent(CadastroActivity.this, MensagensActivity.class);
                         //Fazer que activity seja a principal
