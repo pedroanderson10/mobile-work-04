@@ -30,7 +30,7 @@
                 android:value=".MensagensActivity" />
         </activity>
 
-        <activity android:name=".MensagensActivity">
+        <activity android:name=".MensagensActivity" android:label="Lista de conversas">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,7 +38,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CadastroActivity" />
+        <activity android:name=".CadastroActivity"
+            android:label="Cadastro">
+
+            <!-- Definir qual a activity pai da activity Contatos -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
         <activity android:name=".MainActivity" />
 
     </application>

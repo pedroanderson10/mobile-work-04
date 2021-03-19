@@ -13,22 +13,22 @@
         android:layout_height="75dp"
         android:layout_marginStart="0dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_user" />
 
     <TextView
         android:id="@+id/textChat"
-        android:layout_width="0dp"
+        android:maxWidth="240dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
         android:background="@color/white"
         android:elevation="4dp"
         android:padding="8dp"
-        android:text="Texto do chat Texto do chat Texto do chat
-            Texto do chatTexto do chatTexto do chatTexto do chat"
-        app:layout_constraintEnd_toStartOf="@+id/imageChatUser"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Texto do chat"
+        app:layout_constraintStart_toEndOf="@+id/imageChatUser"
         app:layout_constraintTop_toTopOf="@+id/imageChatUser" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

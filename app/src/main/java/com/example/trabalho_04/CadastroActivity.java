@@ -78,6 +78,7 @@ public class CadastroActivity extends AppCompatActivity {
 
         User user = new User(id, nomeUsuario);
 
+        //Salvar usuário no firebase com id como chave primária
         FirebaseFirestore.getInstance().collection("users")
                 .document(id)
                 .set(user)
