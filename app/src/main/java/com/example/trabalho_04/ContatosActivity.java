@@ -76,6 +76,7 @@ public class ContatosActivity extends AppCompatActivity {
         @Override
         //Conectar itens para manipulá-los
         public void bind(@NonNull ViewHolder viewHolder, int position) {
+            ImageView imgUser = viewHolder.itemView.findViewById(R.id.imageViewUser);
             TextView txtNomeUser = viewHolder.itemView.findViewById(R.id.textViewChat);
             ImageView imgChat = viewHolder.itemView.findViewById(R.id.imageViewButtonChat);
 

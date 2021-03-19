@@ -26,11 +26,21 @@
             android:id="@+id/textViewChat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="33dp"
+            android:layout_marginLeft="73dp"
             android:layout_marginTop="20dp"
             android:text="Usuário X"
             android:textColor="#6E6F71"
             android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageViewUser"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="360dp"
+            android:hapticFeedbackEnabled="false"
+            app:srcCompat="@drawable/ic_user" />
 
 
     </RelativeLayout>
