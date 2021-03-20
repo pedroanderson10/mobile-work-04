@@ -11,7 +11,7 @@ OBS : Desenvolvido e rodando a partir do Nexus 5X API 24
 
 # Como usar
 
-1.Cadastre-se
+1. Cadastre-se
 
 Nome : 'username'
 
