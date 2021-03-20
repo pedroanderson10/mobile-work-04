@@ -11,8 +11,10 @@ OBS : Desenvolvido e rodando a partir do Nexus 5X API 24
 
 # Como usar
 
-Cadastre-se
+###Cadastre-se
 
 Nome : "username"
+
 Email : "username"@gmail.com
+
 Senha : Mínimo 6 chars 
