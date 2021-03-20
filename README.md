@@ -11,10 +11,10 @@ OBS : Desenvolvido e rodando a partir do Nexus 5X API 24
 
 # Como usar
 
-*Cadastre-se*
+* 1.Cadastre-se*
 
-Nome : "username"
+Nome : 'username'
 
-Email : "username"@gmail.com
+Email : 'username'@gmail.com
 
-Senha : Mínimo 6 chars 
+Senha : '123456' (Mínimo 6 chars)
