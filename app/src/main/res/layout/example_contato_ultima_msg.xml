@@ -12,25 +12,25 @@
         android:backgroundTint="#CED6E0"
         android:elevation="4dp">
 
-        <ImageView
-            android:id="@+id/imageViewButtonChat"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="22dp"
-            android:layout_marginRight="45dp"
-            android:hapticFeedbackEnabled="false"
-            app:srcCompat="@drawable/ic_start_chat" />
-
         <TextView
             android:id="@+id/textViewChat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="73dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="Usuário X"
             android:textColor="#2F3542"
             android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewChatUltimaMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="38dp"
+            android:text="Última mensagem"
+            android:textColor="#6E6F71"
+            android:textSize="15dp" />
 
         <ImageView
             android:id="@+id/imageViewUser"

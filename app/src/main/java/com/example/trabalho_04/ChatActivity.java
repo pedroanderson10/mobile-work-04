@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.trabalho_04.entidade.Contato;
 import com.example.trabalho_04.entidade.Mensagem;
 import com.example.trabalho_04.entidade.User;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -125,6 +126,16 @@ public class ChatActivity extends AppCompatActivity {
                         @Override
                         public void onSuccess(DocumentReference documentReference) {
                             Log.d("TesteMensagem", documentReference.getId());
+
+                            // Criação de novo documento de quem está enviando nos contatos, para receber últimas mensagens de alguns de contatos
+                            Contato contato = new Contato(idRecebimento, user.getNome(), mensagem.getTexto(), mensagem.getMomentoMsg());
+
+                            FirebaseFirestore.getInstance().collection("/ultimas-mensagens")
+                                    .document(idEnvio)
+                                    .collection("contatos")
+                                    .document(idRecebimento)
+                                    .set(contato);
+
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
@@ -143,6 +154,16 @@ public class ChatActivity extends AppCompatActivity {
                         @Override
                         public void onSuccess(DocumentReference documentReference) {
                             Log.d("TesteMensagem", documentReference.getId());
+
+                            // Criação de novo documento de quem está enviando nos contatos, para receber últimas mensagens de alguns de contatos
+                            Contato contato = new Contato(idRecebimento, user.getNome(), mensagem.getTexto(), mensagem.getMomentoMsg());
+
+                            FirebaseFirestore.getInstance().collection("/ultimas-mensagens")
+                                    .document(idRecebimento)
+                                    .collection("contatos")
+                                    .document(idEnvio)
+                                    .set(contato);
+
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {

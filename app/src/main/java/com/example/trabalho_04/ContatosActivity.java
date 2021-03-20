@@ -45,7 +45,7 @@ public class ContatosActivity extends AppCompatActivity {
             public void onItemClick(@NonNull Item item, @NonNull View view) {
                 Intent intent = new Intent(ContatosActivity.this, ChatActivity.class);
 
-                //Enviar objeto para outra activity
+                //Enviar objeto para outra activity (ChatActivity)
                 UserItem userItem = (UserItem) item;
                 intent.putExtra("user", userItem.user);
 
